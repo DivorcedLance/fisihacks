@@ -13,6 +13,9 @@ const firebaseConfig = {
   messagingSenderId: '370303690000',
   appId: '1:370303690000:web:95972009937492ec73f195',
 };
+// TO ANYONE READING THE CODE:
+// This is a early version of the webpage. I'm aware of the security risks of having the API key in the code. Soon I'll be using a backend (Python Flask or Django) to handle the requests. This also will be use to fix the obvious vulnerability of the index-authorized page.
+// -Vergara Pachas Jose Luis
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

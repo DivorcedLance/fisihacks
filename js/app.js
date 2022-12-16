@@ -78,15 +78,4 @@ async function add_form(e) {
   }
 }
 
-async function print_db() {
-  const response = await read('users');
-  try {
-    response.forEach((doc) => {
-      console.log(doc.data());
-    });
-  } catch (error) {
-    console.log(error.message);
-  }
-}
-
 user_form.addEventListener('submit', add_form);
