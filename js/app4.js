@@ -43,6 +43,9 @@ async function add_form(e) {
     course: course,
     drive: drive,
     description: description,
+    phone: '',
+    firstname: '',
+    lastname: '',
   };
 
   let valid_form = false;
@@ -51,6 +54,9 @@ async function add_form(e) {
     try {
       response.forEach((doc) => {
         if (email === doc.data().email) {
+          m_form.phone = doc.data().phone;
+          m_form.firstname = doc.data().firstname;
+          m_form.lastname = doc.data().lastname;
           valid_form = true;
         }
       });
