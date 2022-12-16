@@ -67,6 +67,8 @@ async function add_form(e) {
     if (valid_form) {
       await insert('class-orders', m_form);
       alert('Te contactaremos pronto!!!', 'success');
+      const course_form = document.getElementById('course-form');
+      course_form.reset();
     }
   } catch (error) {
     alert(error);

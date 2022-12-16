@@ -16,7 +16,7 @@ const PasswordError = new Error('Contraseña incorrecta');
 const alertPlaceholder = document.getElementById('alertPlaceholder');
 
 function redirect() {
-  setTimeout(myURL, 1000);
+  setTimeout(myURL, 250);
 }
 
 function myURL() {

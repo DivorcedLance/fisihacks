@@ -70,6 +70,8 @@ async function add_form(e) {
     if (valid_form) {
       await insert('users', m_form);
       alert('Registro exitoso! :)', 'success');
+      const user_form = document.getElementById('register-form');
+      user_form.reset();
     }
   } catch (error) {
     alert(error);
