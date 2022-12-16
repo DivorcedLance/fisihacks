@@ -88,4 +88,3 @@ async function print_db() {
 }
 
 user_form.addEventListener('submit', add_form);
-db_btn.addEventListener('click', print_db);
