@@ -1,11 +1,9 @@
-import { insert, read } from './firestore.js';
+import { read } from './firestore.js';
 
 const user_form = document.getElementById('login-form');
 
 const email_input = document.getElementById('email');
 const password_input = document.getElementById('password');
-
-let s_email = 'error';
 
 const NotRegisteredError = new Error(
   'Este correo no está registrado en FisiHacks. Registrate!!!'
