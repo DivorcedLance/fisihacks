@@ -8,8 +8,6 @@ const phone_input = document.getElementById('phone');
 const email_input = document.getElementById('email');
 const password_input = document.getElementById('password');
 
-const db_btn = document.getElementById('db-button');
-
 const AlreadyRegisteredError = new Error(
   'Este correo ya está registrado en FisiHacks!!!'
 );
